@@ -390,4 +390,5 @@ NAN_MODULE_INIT(init) {
   CallbackInfo::Initialize(target);
 }
 
-NODE_MODULE(ffi_bindings, init)
+NODE_MODULE_CONTEXT_AWARE_BUILTIN(ffi_bindings, init)
+
